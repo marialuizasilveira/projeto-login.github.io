@@ -29,8 +29,8 @@ main{
     position: absolute;
     top: 56%;
     left: 56%;
-    transform: translate(-50%, -50%);
     overflow: hidden;
+    transform: translate(-50%, -50%);
 
     transition: width 1s, height 0.3s;
     transition-timing-function: ease;
@@ -62,12 +62,34 @@ form >div.campo{
     display: block;
     width: 100%;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0px;
 }
 
 form >div.campo > label{
     display: none;
+}
+
+div.campo > span {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input{
+    background-color: rgb(218, 241, 229);
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 100%;
+    transform: translate( 0.8px, -10px);
+    border: none;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+div.campo > input:focus-within{
+    background-color: white;
 }
 
 form > input[type=submit]{
@@ -106,6 +128,6 @@ form > a.botao:hover{
     color: white;
 }
 
-form > a.botao > i{
-    font-size: 0.8em;
+form a.botao span{
+    font-size: 1em;
 }
